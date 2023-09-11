@@ -47,12 +47,12 @@ namespace Configuracion
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tipocbb = new System.Windows.Forms.ComboBox();
+            this.serietxb = new System.Windows.Forms.TextBox();
+            this.iniciotxb = new System.Windows.Forms.TextBox();
+            this.fintxb = new System.Windows.Forms.TextBox();
+            this.actualtxb = new System.Windows.Forms.TextBox();
+            this.FacturadataGridView = new System.Windows.Forms.DataGridView();
             this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TipoFactura = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Serie = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,10 +61,10 @@ namespace Configuracion
             this.Actual = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Activo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.filtrarFactcbb = new System.Windows.Forms.ComboBox();
+            this.activascheckbox = new System.Windows.Forms.CheckBox();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FacturadataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // toolStrip1
@@ -214,46 +214,46 @@ namespace Configuracion
             this.label5.Text = "Actual";
             this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
-            // comboBox1
+            // tipocbb
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(45, 112);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(185, 24);
-            this.comboBox1.TabIndex = 63;
+            this.tipocbb.FormattingEnabled = true;
+            this.tipocbb.Location = new System.Drawing.Point(45, 112);
+            this.tipocbb.Name = "tipocbb";
+            this.tipocbb.Size = new System.Drawing.Size(185, 24);
+            this.tipocbb.TabIndex = 63;
             // 
-            // textBox1
+            // serietxb
             // 
-            this.textBox1.Location = new System.Drawing.Point(253, 112);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 64;
+            this.serietxb.Location = new System.Drawing.Point(253, 112);
+            this.serietxb.Name = "serietxb";
+            this.serietxb.Size = new System.Drawing.Size(100, 22);
+            this.serietxb.TabIndex = 64;
             // 
-            // textBox2
+            // iniciotxb
             // 
-            this.textBox2.Location = new System.Drawing.Point(385, 112);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 65;
+            this.iniciotxb.Location = new System.Drawing.Point(385, 112);
+            this.iniciotxb.Name = "iniciotxb";
+            this.iniciotxb.Size = new System.Drawing.Size(100, 22);
+            this.iniciotxb.TabIndex = 65;
             // 
-            // textBox3
+            // fintxb
             // 
-            this.textBox3.Location = new System.Drawing.Point(515, 112);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 66;
+            this.fintxb.Location = new System.Drawing.Point(515, 112);
+            this.fintxb.Name = "fintxb";
+            this.fintxb.Size = new System.Drawing.Size(100, 22);
+            this.fintxb.TabIndex = 66;
             // 
-            // textBox4
+            // actualtxb
             // 
-            this.textBox4.Location = new System.Drawing.Point(645, 112);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 67;
+            this.actualtxb.Location = new System.Drawing.Point(645, 112);
+            this.actualtxb.Name = "actualtxb";
+            this.actualtxb.Size = new System.Drawing.Size(100, 22);
+            this.actualtxb.TabIndex = 67;
             // 
-            // dataGridView1
+            // FacturadataGridView
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.FacturadataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.FacturadataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.ID,
             this.TipoFactura,
             this.Serie,
@@ -261,15 +261,15 @@ namespace Configuracion
             this.Fin,
             this.Actual,
             this.Activo});
-            this.dataGridView1.Location = new System.Drawing.Point(0, 152);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1049, 261);
-            this.dataGridView1.TabIndex = 68;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.FacturadataGridView.Location = new System.Drawing.Point(0, 152);
+            this.FacturadataGridView.Name = "FacturadataGridView";
+            this.FacturadataGridView.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            this.FacturadataGridView.RowHeadersVisible = false;
+            this.FacturadataGridView.RowHeadersWidth = 51;
+            this.FacturadataGridView.RowTemplate.Height = 24;
+            this.FacturadataGridView.Size = new System.Drawing.Size(1049, 261);
+            this.FacturadataGridView.TabIndex = 68;
+            this.FacturadataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // ID
             // 
@@ -331,39 +331,39 @@ namespace Configuracion
             this.label6.TabIndex = 69;
             this.label6.Text = "Filtrar factura";
             // 
-            // comboBox2
+            // filtrarFactcbb
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(48, 456);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(182, 24);
-            this.comboBox2.TabIndex = 70;
+            this.filtrarFactcbb.FormattingEnabled = true;
+            this.filtrarFactcbb.Location = new System.Drawing.Point(48, 456);
+            this.filtrarFactcbb.Name = "filtrarFactcbb";
+            this.filtrarFactcbb.Size = new System.Drawing.Size(182, 24);
+            this.filtrarFactcbb.TabIndex = 70;
             // 
-            // checkBox1
+            // activascheckbox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.Location = new System.Drawing.Point(283, 453);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(85, 28);
-            this.checkBox1.TabIndex = 71;
-            this.checkBox1.Text = "Activas";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.activascheckbox.AutoSize = true;
+            this.activascheckbox.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.activascheckbox.Location = new System.Drawing.Point(283, 453);
+            this.activascheckbox.Name = "activascheckbox";
+            this.activascheckbox.Size = new System.Drawing.Size(85, 28);
+            this.activascheckbox.TabIndex = 71;
+            this.activascheckbox.Text = "Activas";
+            this.activascheckbox.UseVisualStyleBackColor = true;
             // 
             // Administrar_Facturas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1049, 498);
-            this.Controls.Add(this.checkBox1);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.activascheckbox);
+            this.Controls.Add(this.filtrarFactcbb);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.FacturadataGridView);
+            this.Controls.Add(this.actualtxb);
+            this.Controls.Add(this.fintxb);
+            this.Controls.Add(this.iniciotxb);
+            this.Controls.Add(this.serietxb);
+            this.Controls.Add(this.tipocbb);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -374,7 +374,7 @@ namespace Configuracion
             this.Text = "Administrar facturas";
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.FacturadataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -398,12 +398,12 @@ namespace Configuracion
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.ComboBox tipocbb;
+        private System.Windows.Forms.TextBox serietxb;
+        private System.Windows.Forms.TextBox iniciotxb;
+        private System.Windows.Forms.TextBox fintxb;
+        private System.Windows.Forms.TextBox actualtxb;
+        private System.Windows.Forms.DataGridView FacturadataGridView;
         private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn TipoFactura;
         private System.Windows.Forms.DataGridViewTextBoxColumn Serie;
@@ -412,7 +412,7 @@ namespace Configuracion
         private System.Windows.Forms.DataGridViewTextBoxColumn Actual;
         private System.Windows.Forms.DataGridViewTextBoxColumn Activo;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.ComboBox filtrarFactcbb;
+        private System.Windows.Forms.CheckBox activascheckbox;
     }
 }
