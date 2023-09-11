@@ -55,6 +55,12 @@
     <Compile Include="Configuracion recomendada.Designer.cs">
       <DependentUpon>Configuracion recomendada.cs</DependentUpon>
     </Compile>
+    <Compile Include="Configurar TPV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Configurar TPV.Designer.cs">
+      <DependentUpon>Configurar TPV.cs</DependentUpon>
+    </Compile>
     <Compile Include="Empresa.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Configuracion recomendada.resx">
       <DependentUpon>Configuracion recomendada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Configurar TPV.resx">
+      <DependentUpon>Configurar TPV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Empresa.resx">
       <DependentUpon>Empresa.cs</DependentUpon>
