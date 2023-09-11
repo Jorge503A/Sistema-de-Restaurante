@@ -43,6 +43,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrar Facturas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrar Facturas.Designer.cs">
+      <DependentUpon>Administrar Facturas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Configuracion recomendada.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +64,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Administrar Facturas.resx">
+      <DependentUpon>Administrar Facturas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Configuracion recomendada.resx">
       <DependentUpon>Configuracion recomendada.cs</DependentUpon>
     </EmbeddedResource>
