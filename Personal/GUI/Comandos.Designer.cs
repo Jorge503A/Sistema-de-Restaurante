@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comandos));
-            this.dgvCategorias = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDatosC = new System.Windows.Forms.DataGridView();
+            this.idComando = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comando = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblEmail = new System.Windows.Forms.Label();
             this.txtIdComando = new System.Windows.Forms.TextBox();
             this.lblIdComando = new System.Windows.Forms.Label();
@@ -47,59 +47,61 @@
             this.btnLimpiar = new System.Windows.Forms.ToolStripButton();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtComando = new System.Windows.Forms.TextBox();
             this.lblComando = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosC)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvCategorias
+            // dgvDatosC
             // 
-            this.dgvCategorias.AllowUserToAddRows = false;
-            this.dgvCategorias.AllowUserToDeleteRows = false;
-            this.dgvCategorias.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Snow;
-            this.dgvCategorias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCategorias.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dgvCategorias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.dgvCategorias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCategorias.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCategorias.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.dgvCategorias.Location = new System.Drawing.Point(0, 183);
-            this.dgvCategorias.MultiSelect = false;
-            this.dgvCategorias.Name = "dgvCategorias";
-            this.dgvCategorias.ReadOnly = true;
-            this.dgvCategorias.RowHeadersVisible = false;
-            this.dgvCategorias.RowHeadersWidth = 51;
-            this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCategorias.Size = new System.Drawing.Size(679, 222);
-            this.dgvCategorias.TabIndex = 52;
+            this.dgvDatosC.AllowUserToAddRows = false;
+            this.dgvDatosC.AllowUserToDeleteRows = false;
+            this.dgvDatosC.AllowUserToResizeRows = false;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Snow;
+            this.dgvDatosC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvDatosC.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvDatosC.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dgvDatosC.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgvDatosC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idComando,
+            this.comando});
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDatosC.DefaultCellStyle = dataGridViewCellStyle4;
+            this.dgvDatosC.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.dgvDatosC.Location = new System.Drawing.Point(0, 183);
+            this.dgvDatosC.MultiSelect = false;
+            this.dgvDatosC.Name = "dgvDatosC";
+            this.dgvDatosC.ReadOnly = true;
+            this.dgvDatosC.RowHeadersVisible = false;
+            this.dgvDatosC.RowHeadersWidth = 51;
+            this.dgvDatosC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatosC.Size = new System.Drawing.Size(697, 222);
+            this.dgvDatosC.TabIndex = 52;
             // 
-            // Column1
+            // idComando
             // 
-            this.Column1.HeaderText = "IdComando";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 175;
+            this.idComando.DataPropertyName = "idComando";
+            this.idComando.HeaderText = "IdComando";
+            this.idComando.Name = "idComando";
+            this.idComando.ReadOnly = true;
+            this.idComando.Width = 175;
             // 
-            // Column2
+            // comando
             // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Comando";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.comando.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.comando.DataPropertyName = "comando";
+            this.comando.HeaderText = "Comando";
+            this.comando.Name = "comando";
+            this.comando.ReadOnly = true;
             // 
             // lblEmail
             // 
@@ -146,9 +148,10 @@
             this.toolStripSeparator2});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(679, 62);
+            this.toolStrip1.Size = new System.Drawing.Size(697, 62);
             this.toolStrip1.TabIndex = 31;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // toolStripSeparator4
             // 
@@ -163,6 +166,7 @@
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(157, 59);
             this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // toolStripSeparator1
             // 
@@ -177,6 +181,7 @@
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(112, 59);
             this.btnEditar.Text = "Editar";
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // toolStripSeparator3
             // 
@@ -191,6 +196,7 @@
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(146, 59);
             this.btnGuardar.Text = "Guardar";
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnLimpiar
             // 
@@ -200,6 +206,7 @@
             this.btnLimpiar.Name = "btnLimpiar";
             this.btnLimpiar.Size = new System.Drawing.Size(126, 59);
             this.btnLimpiar.Text = "Limpiar";
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnSalir
             // 
@@ -210,6 +217,7 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(109, 59);
             this.btnSalir.Text = "Salir";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // toolStripSeparator2
             // 
@@ -217,12 +225,12 @@
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 62);
             // 
-            // textBox1
+            // txtComando
             // 
-            this.textBox1.Location = new System.Drawing.Point(79, 127);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(350, 20);
-            this.textBox1.TabIndex = 54;
+            this.txtComando.Location = new System.Drawing.Point(79, 127);
+            this.txtComando.Name = "txtComando";
+            this.txtComando.Size = new System.Drawing.Size(350, 20);
+            this.txtComando.TabIndex = 54;
             // 
             // lblComando
             // 
@@ -246,11 +254,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(679, 405);
+            this.ClientSize = new System.Drawing.Size(697, 405);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtComando);
             this.Controls.Add(this.lblComando);
-            this.Controls.Add(this.dgvCategorias);
+            this.Controls.Add(this.dgvDatosC);
             this.Controls.Add(this.lblEmail);
             this.Controls.Add(this.txtIdComando);
             this.Controls.Add(this.lblIdComando);
@@ -258,7 +266,8 @@
             this.Name = "Comandos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comandos";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
+            this.Load += new System.EventHandler(this.Comandos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosC)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -268,7 +277,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvCategorias;
+        private System.Windows.Forms.DataGridView dgvDatosC;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.TextBox txtIdComando;
         private System.Windows.Forms.Label lblIdComando;
@@ -282,10 +291,10 @@
         private System.Windows.Forms.ToolStripButton btnLimpiar;
         private System.Windows.Forms.ToolStripButton btnSalir;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtComando;
         private System.Windows.Forms.Label lblComando;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idComando;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comando;
     }
 }

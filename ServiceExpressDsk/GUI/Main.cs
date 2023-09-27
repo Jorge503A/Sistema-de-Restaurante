@@ -400,5 +400,17 @@ namespace ServiceExpressDsk.GUI
             Salones.GUI.SalonesMesas f = new Salones.GUI.SalonesMesas();
             f.ShowDialog();
         }
+
+        private void toolStripButton22_Click(object sender, EventArgs e)
+        {
+            Personal.GUI.Comandos f = new Personal.GUI.Comandos();
+            f.ShowDialog();
+        }
+
+        private void toolStripButton23_Click(object sender, EventArgs e)
+        {
+            Personal.GUI.Permisos f = new Personal.GUI.Permisos();
+            f.ShowDialog();
+        }
     }
 }

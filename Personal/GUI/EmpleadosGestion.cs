@@ -32,7 +32,19 @@ namespace Personal.GUI
             InitializeComponent();
         }
 
-        
+        private void Limpiar()
+        {
+            txtIdEmpleado.Clear();
+            txtNombres.Clear();
+            txtApellidos.Clear();
+            txtDireccion.Clear();
+            txtEmail.Clear();
+            txtTelefono.Clear();
+            txtDUI.Clear();
+            txtNIT.Clear();
+            txtSueldoBase.Clear();
+            txtComision.Clear();
+        }
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
@@ -67,16 +79,7 @@ namespace Personal.GUI
                 if (Epl.Actualizar())
                 {
                     MessageBox.Show("Actualizacion Exitosa");
-                    txtIdEmpleado.Clear();
-                    txtNombres.Clear();
-                    txtApellidos.Clear();
-                    txtDireccion.Clear();
-                    txtEmail.Clear();
-                    txtTelefono.Clear();
-                    txtDUI.Clear();
-                    txtNIT.Clear();
-                    txtSueldoBase.Clear();
-                    txtComision.Clear();
+                    Limpiar();
                     CargarDatos();
                     EdicionMode = false;
                 }
@@ -103,16 +106,7 @@ namespace Personal.GUI
                 if (Epl.Insertar())
                 {
                     MessageBox.Show("RegistroExitoso");
-                    txtIdEmpleado.Clear();
-                    txtNombres.Clear();
-                    txtApellidos.Clear();
-                    txtDireccion.Clear();
-                    txtEmail.Clear();
-                    txtTelefono.Clear();
-                    txtDUI.Clear();
-                    txtNIT.Clear();
-                    txtSueldoBase.Clear();
-                    txtComision.Clear();
+                    Limpiar();
                     CargarDatos();
 
                 }
@@ -129,16 +123,7 @@ namespace Personal.GUI
             {
                 EdicionMode = false;
             }
-            txtIdEmpleado.Clear();
-            txtNombres.Clear();
-            txtApellidos.Clear();
-            txtDireccion.Clear();
-            txtEmail.Clear();
-            txtTelefono.Clear();
-            txtDUI.Clear();
-            txtNIT.Clear();
-            txtSueldoBase.Clear();
-            txtComision.Clear();
+            Limpiar();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)

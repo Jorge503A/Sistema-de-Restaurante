@@ -65,7 +65,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(800, 57);
             this.toolStrip1.TabIndex = 20;
             this.toolStrip1.Text = "toolStrip1";
-            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
+//            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnSalir
             // 
@@ -118,7 +118,7 @@
             this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvCategorias.Size = new System.Drawing.Size(800, 222);
             this.dgvCategorias.TabIndex = 53;
-            this.dgvCategorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategorias_CellContentClick);
+//            this.dgvCategorias.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvCategorias_CellContentClick);
             // 
             // Column1
             // 
@@ -168,7 +168,7 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(417, 45);
             this.textBox1.TabIndex = 54;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+//            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // contextMenuStrip1
             // 
@@ -184,7 +184,7 @@
             this.checkBox1.TabIndex = 56;
             this.checkBox1.Text = "#Sesion";
             this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+//            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // checkBox2
             // 
@@ -195,7 +195,7 @@
             this.checkBox2.TabIndex = 57;
             this.checkBox2.Text = "Fecha";
             this.checkBox2.UseVisualStyleBackColor = true;
-            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
+//            this.checkBox2.CheckedChanged += new System.EventHandler(this.checkBox2_CheckedChanged);
             // 
             // checkBox3
             // 
@@ -206,7 +206,7 @@
             this.checkBox3.TabIndex = 58;
             this.checkBox3.Text = "Usuario";
             this.checkBox3.UseVisualStyleBackColor = true;
-            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
+//            this.checkBox3.CheckedChanged += new System.EventHandler(this.checkBox3_CheckedChanged);
             // 
             // label1
             // 
@@ -216,7 +216,7 @@
             this.label1.Size = new System.Drawing.Size(128, 13);
             this.label1.TabIndex = 59;
             this.label1.Text = "Seleccione el tipo de filtro";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+//            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // VisorEventos
             // 

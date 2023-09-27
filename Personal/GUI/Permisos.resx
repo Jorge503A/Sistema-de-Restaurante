@@ -148,4 +148,26 @@
   <metadata name="Column2.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="btnDesEnrolar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAQxJREFUaEPt2DFqAlEQgOGNQjo7W0uP4AFygtzAa9hop4UQhBCw8wK5gWfwAOmt
+        hHRRURGS/ANZEBkT3y7Z90bmh695xfgGFl3MPM/zPM+7ge4wwQZ9ObDWGF8/tnJgqR7yy+fM1MUnTC7w
+        iCPOL29igQfsoF1eJF0HH9Aunku2NlbQLn0qyVpYQrvwfzpghFI18QbtA6qwR+EaWEAbXKVC3WMObWDV
+        gqvjFdqwGIJ7gTYoluDW0AbFEtwztEGxBCfv+FNow2IoVEpLFK6GGbShVSn1QybFXEJeJYYoXcjjlGzX
+        LpF01yyRfH8tYaLfljDTpSVMdf4Va+6PLUmWeMI7BnLgeZ7ned7tl2Xfz1nu9GxVYToAAAAASUVORK5C
+        YII=
+</value>
+  </data>
+  <data name="btnEnrolar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
+        EQAACxEBf2RfkQAAAQ5JREFUaEPt2D1qAlEUhuFRLFLa2Nq7BTeQFWQJbiFlOi2CBCR13EM24BosrdOG
+        NIqCENT3Qi7I8DUzo3PvIeeFp5nieA74Axae53me5/2jXvCDObrhgbUOOP/5gLkj4vLREqaOKB9g7gh1
+        QGDmCLV8ZOIItfi17I9QS5fd7IgZjlAvcm83+YpNtXzU+Ag1tG2N3k5qYAq1j1DDUlmgcmpQKltUTg1K
+        5R2VU4NS+EQPlVPD2rbCA2qlBrZpjT5ql/KHbIMBGjVFiiO+MESWqYWvfWOEbFNLR3uMkXVq8SC8VR+R
+        fWr5XzzBROXlT5jATOUDnmGq8EGNy7+GB9YKfy3u8IZOeOB5nud5nt2K4gI8se+Dtzq7nAAAAABJRU5E
+        rkJggg==
+</value>
+  </data>
 </root>

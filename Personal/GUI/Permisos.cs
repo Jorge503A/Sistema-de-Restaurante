@@ -16,5 +16,35 @@ namespace Personal.GUI
         {
             InitializeComponent();
         }
+        private void CargarRoles()
+        {
+            DataTable Roles = new DataTable();
+            try
+            {
+                Roles = DataManager.DBConsultas.Roles();
+                cmbRol.DataSource = Roles;
+                cmbRol.DisplayMember = "rol";
+                cmbRol.ValueMember = "idRol";
+            }
+            catch (Exception)
+            {
+
+            }
+        }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void Permisos_Load(object sender, EventArgs e)
+        {
+            CargarRoles();
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

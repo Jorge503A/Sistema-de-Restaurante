@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mantenimiento.CLS
 {
-    internal class Comando
+    public class Comando
     {
         int _idComando;
         String _Comando1;

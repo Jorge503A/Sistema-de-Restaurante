@@ -34,9 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblComando = new System.Windows.Forms.Label();
-            this.dgvCategorias = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvDatosC = new System.Windows.Forms.DataGridView();
             this.txtIdMesa = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
@@ -50,7 +48,11 @@
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNumeroDeMesas = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
+            this.idComando = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comando = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosC)).BeginInit();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -79,17 +81,19 @@
             this.lblComando.TabIndex = 59;
             this.lblComando.Text = "N° de mesas";
             // 
-            // dgvCategorias
+            // dgvDatosC
             // 
-            this.dgvCategorias.AllowUserToAddRows = false;
-            this.dgvCategorias.AllowUserToDeleteRows = false;
-            this.dgvCategorias.AllowUserToResizeRows = false;
+            this.dgvDatosC.AllowUserToAddRows = false;
+            this.dgvDatosC.AllowUserToDeleteRows = false;
+            this.dgvDatosC.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Snow;
-            this.dgvCategorias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvCategorias.BackgroundColor = System.Drawing.SystemColors.Menu;
-            this.dgvCategorias.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            this.dgvCategorias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvCategorias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvDatosC.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvDatosC.BackgroundColor = System.Drawing.SystemColors.Menu;
+            this.dgvDatosC.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+            this.dgvDatosC.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatosC.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idComando,
+            this.comando,
             this.Column1,
             this.Column2});
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -99,30 +103,16 @@
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.CornflowerBlue;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvCategorias.DefaultCellStyle = dataGridViewCellStyle2;
-            this.dgvCategorias.Location = new System.Drawing.Point(24, 138);
-            this.dgvCategorias.MultiSelect = false;
-            this.dgvCategorias.Name = "dgvCategorias";
-            this.dgvCategorias.ReadOnly = true;
-            this.dgvCategorias.RowHeadersVisible = false;
-            this.dgvCategorias.RowHeadersWidth = 51;
-            this.dgvCategorias.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCategorias.Size = new System.Drawing.Size(791, 222);
-            this.dgvCategorias.TabIndex = 58;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "IdComando";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            this.Column1.Width = 175;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Column2.HeaderText = "Comando";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
+            this.dgvDatosC.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvDatosC.Location = new System.Drawing.Point(24, 138);
+            this.dgvDatosC.MultiSelect = false;
+            this.dgvDatosC.Name = "dgvDatosC";
+            this.dgvDatosC.ReadOnly = true;
+            this.dgvDatosC.RowHeadersVisible = false;
+            this.dgvDatosC.RowHeadersWidth = 51;
+            this.dgvDatosC.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDatosC.Size = new System.Drawing.Size(791, 222);
+            this.dgvDatosC.TabIndex = 58;
             // 
             // txtIdMesa
             // 
@@ -236,6 +226,33 @@
             this.txtNumeroDeMesas.Size = new System.Drawing.Size(169, 20);
             this.txtNumeroDeMesas.TabIndex = 63;
             // 
+            // idComando
+            // 
+            this.idComando.DataPropertyName = "idComando";
+            this.idComando.HeaderText = "idMesa";
+            this.idComando.Name = "idComando";
+            this.idComando.ReadOnly = true;
+            // 
+            // comando
+            // 
+            this.comando.DataPropertyName = "comando";
+            this.comando.HeaderText = "Numero";
+            this.comando.Name = "comando";
+            this.comando.ReadOnly = true;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nombre";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Capacidad";
+            this.Column2.Name = "Column2";
+            this.Column2.ReadOnly = true;
+            // 
             // SalonesMesas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -246,13 +263,14 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblComando);
-            this.Controls.Add(this.dgvCategorias);
+            this.Controls.Add(this.dgvDatosC);
             this.Controls.Add(this.txtIdMesa);
             this.Controls.Add(this.toolStrip1);
             this.Name = "SalonesMesas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SalonesMesas";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).EndInit();
+            this.Load += new System.EventHandler(this.SalonesMesas_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatosC)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -265,9 +283,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label lblComando;
-        private System.Windows.Forms.DataGridView dgvCategorias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridView dgvDatosC;
         private System.Windows.Forms.TextBox txtIdMesa;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
@@ -281,5 +297,9 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNumeroDeMesas;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idComando;
+        private System.Windows.Forms.DataGridViewTextBoxColumn comando;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
     }
 }

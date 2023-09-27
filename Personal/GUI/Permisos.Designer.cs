@@ -32,8 +32,6 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.btnSalir = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
@@ -44,9 +42,9 @@
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cmbRol = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnDesEnrolar = new System.Windows.Forms.Button();
+            this.btnEnrolar = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +62,7 @@
             this.toolStrip1.Size = new System.Drawing.Size(800, 57);
             this.toolStrip1.TabIndex = 19;
             this.toolStrip1.Text = "toolStrip1";
+            this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
             // 
             // btnSalir
             // 
@@ -74,28 +73,13 @@
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(109, 54);
             this.btnSalir.Text = "Salir";
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.toolStripSeparator2.Name = "toolStripSeparator2";
             this.toolStripSeparator2.Size = new System.Drawing.Size(6, 57);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(315, 247);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 39);
-            this.pictureBox2.TabIndex = 18;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(315, 187);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 39);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
             // 
             // label3
             // 
@@ -188,14 +172,32 @@
             this.label1.TabIndex = 11;
             this.label1.Text = "Rol Seleccionado";
             // 
+            // btnDesEnrolar
+            // 
+            this.btnDesEnrolar.Image = ((System.Drawing.Image)(resources.GetObject("btnDesEnrolar.Image")));
+            this.btnDesEnrolar.Location = new System.Drawing.Point(315, 246);
+            this.btnDesEnrolar.Name = "btnDesEnrolar";
+            this.btnDesEnrolar.Size = new System.Drawing.Size(75, 40);
+            this.btnDesEnrolar.TabIndex = 45;
+            this.btnDesEnrolar.UseVisualStyleBackColor = true;
+            // 
+            // btnEnrolar
+            // 
+            this.btnEnrolar.Image = ((System.Drawing.Image)(resources.GetObject("btnEnrolar.Image")));
+            this.btnEnrolar.Location = new System.Drawing.Point(315, 186);
+            this.btnEnrolar.Name = "btnEnrolar";
+            this.btnEnrolar.Size = new System.Drawing.Size(75, 40);
+            this.btnEnrolar.TabIndex = 44;
+            this.btnEnrolar.UseVisualStyleBackColor = true;
+            // 
             // Permisos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 347);
+            this.Controls.Add(this.btnDesEnrolar);
+            this.Controls.Add(this.btnEnrolar);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.dataGridView2);
@@ -205,10 +207,9 @@
             this.Name = "Permisos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Permisos";
+            this.Load += new System.EventHandler(this.Permisos_Load);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
@@ -221,8 +222,6 @@
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton btnSalir;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView dataGridView2;
@@ -233,5 +232,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.Button btnDesEnrolar;
+        private System.Windows.Forms.Button btnEnrolar;
     }
 }

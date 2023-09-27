@@ -798,6 +798,26 @@ namespace DataManager
                 return new DataTable();
             }
         }
+
+        public static DataTable Comandos()
+        {
+            try
+            {
+                DataTable resultado = new DataTable();
+                String sentencia = @"SELECT * FROM bd_fastfood.comando;";
+                DBOperacion operacion = new DBOperacion();
+
+                resultado = operacion.Consultar(sentencia);
+                return resultado;
+            }
+            catch (Exception)
+            {
+                return new DataTable();
+                throw;
+            }
+        }
+
     }
+
 }
 
